@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #061c24;
+  color: #fff;
+}
+
+.header {
+  background: cover;
+  background-repeat: no-repeat;
+  background: url("assets/main.jpg");
+  min-height: 100vh;
+}
+
+.navbar {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 110px;
+  padding: 0 16px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 26px;
+  background: #1ccfc9;
+  border: none;
+  cursor: pointer;
+}
+
+.section {
+  padding: 50px 16px;
+  text-align: center;
+}
+
+.cards,
+.tours {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card img,
+.tour img,
+.wide-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tour {
+  background: #0a2a33;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tour div {
+  padding: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer {
+  background: #020c11;
+  padding: 30px 16px;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-box h3,
+.footer-box h4 {
+  margin-bottom: 10px;
+}
+
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box ul li {
+  margin-bottom: 6px;
+}
+
+@media (min-width: 400px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-box {
+    width: 30%;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .section {
+    padding: 55px 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form .in-1 {
+    /* border-radius: 10px; */
+    width: 300px;
+    height: 40px;
+  }
+  .btn {
+    padding: 14px 30px;
+  }
+  .hero h1 {
+    font-size: 56px;
+  }
+
+  .section {
+    padding: 65px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  .card {
+    height: 300px;
+    width: 250px;
+    overflow: hidden;
+  }
+  .cards {
+    flex-direction: row;
+  }
+
+  .tours {
+    flex-direction: row;
+  }
+
+  .tour {
+    display: flex;
+  }
+
+  .tour img {
+    width: 40%;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 992px) {
+  .form .in-1 {
+    /* border-radius: 10px; */
+    width: 500px;
+    height: 40px;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    width: 500px;
+  }
+  .footer {
+    padding: 50px 80px;
+  }
+  .navbar {
+    padding: 20px 60px;
+  }
+
+  .hero {
+    margin-top: 150px;
+  }
+
+  .hero h1 {
+    font-size: 80px;
+  }
+
+  .section {
+    padding: 90px 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 50px;
+  }
+  .form .in-1 {
+    /* border-radius: 10px; */
+    width: 500px;
+    height: 40px;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero h1 {
+    font-size: 95px;
+  }
+
+  .section {
+    padding: 110px 120px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .form .in-1 {
+    /* border-radius: 10px; */
+    width: 600px;
+    height: 50px;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero h1 {
+    font-size: 115px;
+  }
+}
